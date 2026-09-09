@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甄嬛传 影音-影视剧集赏析与在线观看指南</title>
+    <meta name="description" content="甄嬛传影音专题站，提供甄嬛传剧情深度解析、经典角色介绍、精彩片段影音赏析、幕后花絮与在线观看指引，带你重温宫廷权谋经典大剧。">
+    <meta name="keywords" content="甄嬛传,甄嬛传影音,甄嬛传在线观看,甄嬛传剧情,甄嬛传角色,甄嬛传片段,宫廷剧,孙俪,陈建斌">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            background: #f9f3eb;
+            color: #3a2e28;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        a {
+            color: #8b3a2a;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #c05a3c;
+        }
+        header.site-header {
+            background: linear-gradient(135deg, #3a1e12 0%, #5e3320 100%);
+            padding: 18px 0;
+            border-bottom: 3px solid #c49a6c;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area h1 {
+            color: #f7e8d0;
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .logo-area p {
+            color: #d4b694;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: #f0dcc0;
+            font-size: 16px;
+            padding: 5px 8px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        .nav-links a:hover {
+            border-bottom-color: #e6b17e;
+            color: #fff;
+        }
+        .hero {
+            background: #5e3320;
+            background-image: radial-gradient(circle at 20% 40%, #7a4a2e 0%, #4a2415 100%);
+            padding: 60px 20px;
+            text-align: center;
+            color: #f7e8d0;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero:after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.08"><path d="M20 30 Q 40 5 65 20 T 90 40" stroke="white" fill="none" stroke-width="2"/><path d="M10 70 Q 35 45 60 65 T 85 80" stroke="white" fill="none" stroke-width="1.5"/></svg>');
+            background-size: 200px 200px;
+            pointer-events: none;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-content h2 {
+            font-size: 42px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            letter-spacing: 4px;
+        }
+        .hero-content p {
+            max-width: 700px;
+            margin: 0 auto 25px;
+            font-size: 17px;
+            color: #e8cfae;
+        }
+        .hero-btn {
+            display: inline-block;
+            background: #c49a6c;
+            color: #2e1a10;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            font-size: 16px;
+        }
+        .hero-btn:hover {
+            background: #dcb689;
+            transform: translateY(-2px);
+        }
+        .section-title {
+            text-align: center;
+            margin: 50px 0 30px;
+        }
+        .section-title h2 {
+            font-size: 30px;
+            color: #3a1e12;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 12px;
+        }
+        .section-title h2:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: #c49a6c;
+        }
+        .section-title p {
+            color: #7a5f4e;
+            margin-top: 8px;
+        }
+        .intro-section {
+            background: #fff;
+            padding: 40px 0;
+        }
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .intro-text h3 {
+            font-size: 24px;
+            color: #3a1e12;
+            margin-bottom: 15px;
+            border-left: 4px solid #c49a6c;
+            padding-left: 15px;
+        }
+        .intro-text p {
+            margin-bottom: 15px;
+            color: #4d3b30;
+        }
+        .intro-card {
+            background: #f9f3eb;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid #e0cdb8;
+        }
+        .intro-card ul {
+            list-style: none;
+        }
+        .intro-card li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #c9ad8e;
+            display: flex;
+            align-items: center;
+        }
+        .intro-card li:last-child {
+            border-bottom: none;
+        }
+        .intro-card li:before {
+            content: "✦";
+            color: #b8865a;
+            margin-right: 10px;
+        }
+        .episodes-section {
+            background: #f5ece2;
+            padding: 50px 0;
+        }
+        .episode-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .episode-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+            transition: transform 0.3s;
+            border: 1px solid #e2d2c0;
+        }
+        .episode-card:hover {
+            transform: translateY(-5px);
+        }
+        .card-img {
+            height: 150px;
+            background: linear-gradient(135deg, #6b3f28, #8b5a3a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f7e8d0;
+            font-size: 36px;
+            letter-spacing: 5px;
+            position: relative;
+        }
+        .card-img .play-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            backdrop-filter: blur(2px);
+        }
+        .card-body {
+            padding: 18px;
+        }
+        .card-body h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #3a1e12;
+        }
+        .card-body p {
+            font-size: 14px;
+            color: #6b5140;
+            margin-bottom: 12px;
+        }
+        .card-tag {
+            display: inline-block;
+            background: #f0e0ce;
+            color: #7a3f2a;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-right: 6px;
+        }
+        .characters-section {
+            background: #fff;
+            padding: 50px 0;
+        }
+        .characters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .character-card {
+            background: #fbf7f2;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #e5d6c6;
+            transition: all 0.3s;
+        }
+        .character-card:hover {
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        }
+        .char-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #a0714f, #6b3f28);
+            margin: 0 auto 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: #f7e8d0;
+        }
+        .character-card h3 {
+            font-size: 18px;
+            color: #3a1e12;
+        }
+        .character-card .role {
+            color: #a0745a;
+            font-size: 13px;
+            margin: 4px 0 8px;
+        }
+        .character-card p {
+            font-size: 13px;
+            color: #5b4638;
+        }
+        .video-section {
+            background: #2a1810;
+            padding: 50px 0;
+            color: #e8cfae;
+        }
+        .video-section .section-title h2 {
+            color: #f0dcc0;
+        }
+        .video-section .section-title h2:after {
+            background: #c49a6c;
+        }
+        .video-section .section-title p {
+            color: #b6957a;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+        .video-main {
+            background: #3a2418;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .video-placeholder {
+            background: #1f1109;
+            border-radius: 8px;
+            min-height: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #5a3a28;
+        }
+        .video-placeholder .big-play {
+            font-size: 60px;
+            color: #c49a6c;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .video-placeholder .big-play:hover {
+            transform: scale(1.1);
+        }
+        .video-placeholder p {
+            margin-top: 15px;
+            color: #b6957a;
+        }
+        .video-list {
+            background: #3a2418;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .video-list h3 {
+            color: #e8cfae;
+            font-size: 17px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #5a3a28;
+            padding-bottom: 8px;
+        }
+        .video-list-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 5px;
+            border-bottom: 1px solid #2e1d14;
+            color: #d4b694;
+            font-size: 14px;
+        }
+        .video-list-item:last-child {
+            border-bottom: none;
+        }
+        .video-list-item .num {
+            width: 25px;
+            color: #c49a6c;
+            font-weight: bold;
+        }
+        .music-section {
+            background: #f5ece2;
+            padding: 50px 0;
+        }
+        .music-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .music-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid #e0cdb8;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .music-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #a0714f, #c49a6c);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: #fff;
+            flex-shrink: 0;
+        }
+        .music-info h3 {
+            font-size: 16px;
+            color: #3a1e12;
+        }
+        .music-info p {
+            font-size: 13px;
+            color: #7a5f4e;
+        }
+        .faq-section {
+            background: #fff;
+            padding: 50px 0;
+        }
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fbf7f2;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            padding: 18px 22px;
+            border-left: 4px solid #c49a6c;
+        }
+        .faq-item h3 {
+            font-size: 17px;
+            color: #3a1e12;
+            margin-bottom: 6px;
+        }
+        .faq-item p {
+            font-size: 14px;
+            color: #5b4638;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #3a1e12, #5e3320);
+            padding: 40px 0;
+            text-align: center;
+        }
+        .cta-section h2 {
+            color: #f7e8d0;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+        .cta-section p {
+            color: #d4b694;
+            margin-bottom: 20px;
+        }
+        .cta-btn {
+            background: #c49a6c;
+            color: #2e1a10;
+            padding: 12px 35px;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+        .cta-btn:hover {
+            background: #dcb689;
+        }
+        footer.site-footer {
+            background: #1f1109;
+            padding: 30px 0;
+            color: #8a6a52;
+            text-align: center;
+        }
+        .footer-links {
+            margin-bottom: 15px;
+        }
+        .footer-links a {
+            color: #b6957a;
+            margin: 0 12px;
+            font-size: 14px;
+        }
+        .footer-links a:hover {
+            color: #c49a6c;
+        }
+        .copyright {
+            font-size: 13px;
+        }
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .nav-links {
+                gap: 12px;
+                justify-content: center;
+            }
+            .hero-content h2 {
+                font-size: 30px;
+            }
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+            .characters-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .logo-area h1 {
+                font-size: 22px;
+            }
+        }
+        @media (max-width: 480px) {
+            .characters-grid {
+                grid-template-columns: 1fr;
+            }
+            .episode-grid {
+                grid-template-columns: 1fr;
+            }
+            .music-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-content h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <h1>甄嬛传影音</h1>
+                <p>经典宫斗 · 深度赏析 · 影音集锦</p>
+            </div>
+            <nav class="nav-links">
+                <a href="#intro">剧集简介</a>
+                <a href="#episodes">经典剧情</a>
+                <a href="#characters">人物群像</a>
+                <a href="#video">影音赏析</a>
+                <a href="#music">原声配乐</a>
+                <a href="#faq">观剧指南</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>甄嬛传 · 影音盛宴</h2>
+            <p>从深宫步步为营到权力之巅，一部值得反复品味的宫廷权谋史诗。这里汇集甄嬛传的精彩影音片段、深度剧情解析与角色故事，带你重温这部经典之作。</p>
+            <a href="#episodes" class="hero-btn">探索精彩剧情</a>
+        </div>
+    </section>
+
+    <section class="intro-section" id="intro">
+        <div class="container">
+            <div class="section-title">
+                <h2>关于甄嬛传</h2>
+                <p>一部现象级古装宫廷剧的影音世界</p>
+            </div>
+            <div class="intro-grid">
+                <div class="intro-text">
+                    <h3>剧情梗概</h3>
+                    <p>《甄嬛传》讲述了少女甄嬛从入宫时的纯真无邪，到经历宫廷倾轧后逐渐成长为善于权谋的皇太后的故事。全剧以清朝雍正年间为背景，细腻刻画了后宫嫔妃之间的明争暗斗与人性挣扎。</p>
+                    <p>该剧改编自流潋紫所著同名小说，由郑晓龙执导，孙俪、陈建斌、蔡少芬等主演。自2011年播出以来，凭借精良的制作、严谨的剧本和演员出色的表演，成为国产古装剧的标杆之作，至今仍被观众津津乐道。</p>
+                    <p>剧中大量的经典台词、名场面和复杂的人物关系，构成了独特的"甄嬛传文化"，衍生出无数讨论和二次创作，是国产剧迷不可错过的影音经典。</p>
+                </div>
+                <div class="intro-card">
+                    <h3>剧集信息一览</h3>
+                    <ul>
+                        <li><strong>首播时间：</strong>2011年</li>
+                        <li><strong>导演：</strong>郑晓龙</li>
+                        <li><strong>主演：</strong>孙俪 / 陈建斌 / 蔡少芬 / 蒋欣</li>
+                        <li><strong>集数：</strong>76集</li>
+                        <li><strong>类型：</strong>古装 / 宫廷 / 权谋</li>
+                        <li><strong>原著：</strong>流潋紫同名小说</li>
+                        <li><strong>豆瓣评分：</strong>9.4分（高分经典）</li>
+                        <li><strong>观看平台：</strong>主流视频网站均可观看</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="episodes-section" id="episodes">
+        <div class="container">
+            <div class="section-title">
+                <h2>经典剧情名场面</h2>
+                <p>那些令人难忘的甄嬛传瞬间</p>
+            </div>
+            <div class="episode-grid">
+                <div class="episode-card">
+                    <div class="card-img">
+                        <span class="play-icon">▶</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>初入宫闱 · 杏花微雨</h3>
+                        <p>甄嬛初入宫时称病避宠，在御花园与皇上偶遇，一曲箫声引出"杏花春雨"的初遇，纯真年代的美好就此展开。</p>
+                        <span class="card-tag">初遇</span>
+                        <span class="card-tag">纯真</span>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <div class="card-img">
+                        <span class="play-icon">▶</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>惊鸿舞 · 一舞动君心</h3>
+                        <p>温宜公主生辰宴上，甄嬛一舞《惊鸿舞》技惊四座，也让皇上对她刮目相看，从此开启荣宠之路。</p>
+                        <span class="card-tag">才艺</span>
+                        <span class="card-tag">惊艳</span>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <div class="card-img">
+                        <span class="play-icon">▶</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>碎玉轩 · 失子之痛</h3>
+                        <p>甄嬛初次怀孕后遭华妃刁难，在烈日下跪导致流产，这是她性格转变的重要转折点，宫斗的残酷初现端倪。</p>
+                        <span class="card-tag">虐心</span>
+                        <span class="card-tag">转折</span>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <div class="card-img">
+                        <span class="play-icon">▶</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>甘露寺 · 爱恨交织</h3>
+                        <p>被贬甘露寺修行期间，甄嬛与果郡王允礼相恋，这段宫外的真情时光成为她生命中难得的温暖，却也为后续悲剧埋下伏笔。</p>
+                        <span class="card-tag">感情线</span>
+                        <span class="card-tag">虐恋</span>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <div class="card-img">
+                        <span class="play-icon">▶</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>回宫复仇 · 钮祜禄·甄嬛</h3>
+                        <p>为救家人和保护自己，甄嬛设计回宫，以钮祜禄氏身份重新归来，从清纯少女蜕变为步步为营的深宫谋略家。</p>
+                        <span class="card-tag">黑化</span>
+                        <span class="card-tag">权谋</span>
+                    </div>
+                </div>
+                <div class="episode-card">
+                    <div class="card-img">
+                        <span class="play-icon">▶</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>滴血验亲 · 惊心动魄</h3>
+                        <p>祺贵人告发甄嬛与温实初有私情，一场滴血验亲的宫廷对决将剧情推向高潮，甄嬛绝地反击的智慧令人拍案叫绝。</p>
+                        <span class="card-tag">高潮</span>
+                        <span class="card-tag">智斗</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="characters-section" id="characters">
+        <div class="container">
+            <div class="section-title">
+                <h2>剧中人物群像</h2>
+                <p>每一个角色都让人印象深刻</p>
+            </div>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="char-avatar">嬛</div>
+                    <h3>甄嬛</h3>
+                    <div class="role">孙俪 饰 · 女主角</div>
+                    <p>从天真少女到宫斗赢家，一生充满传奇色彩。聪慧坚韧，重情重义却也被深宫磨去了棱角。</p>
+                </div>
+                <div class="character-card">
+                    <div class="char-avatar">皇</div>
+                    <h3>雍正皇帝</h3>
+                    <div class="role">陈建斌 饰 · 皇上</div>
+                    <p>多疑而深沉的帝王，对甄嬛既宠爱又防备，是后宫所有悲剧的根源与裁决者。</p>
+                </div>
+                <div class="character-card">
+                    <div class="char-avatar">后</div>
+                    <h3>乌拉那拉·宜修</h3>
+                    <div class="role">蔡少芬 饰 · 皇后</div>
+                    <p>表面端庄贤惠，实则城府极深。作为后宫之主，她精心布局，是甄嬛最大的对手之一。</p>
+                </div>
+                <div class="character-card">
+                    <div class="char-avatar">华</div>
+                    <h3>华妃</h3>
+                    <div class="role">蒋欣 饰 · 华妃</div>
+                    <p>嚣张跋扈却又可悲可怜，深爱皇上却因家族牵连而不得善终。"贱人就是矫情"的经典台词深入人心。</p>
+                </div>
+                <div class="character-card">
+                    <div class="char-avatar">眉</div>
+                    <h3>沈眉庄</h3>
+                    <div class="role">斓曦 饰 · 惠贵人</div>
+                    <p>端庄大方、温婉坚韧的大家闺秀，与甄嬛情同姐妹，是剧中难得的一抹温柔亮色。</p>
+                </div>
+                <div class="character-card">
+                    <div class="char-avatar">安</div>
+                    <h3>安陵容</h3>
+                    <div class="role">陶昕然 饰 · 安贵人</div>
+                    <p>从自卑敏感到逐渐黑化，安陵容的转变令人唏嘘。她与甄嬛从姐妹到仇敌，是人性悲剧的典型。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section" id="video">
+        <div class="container">
+            <div class="section-title">
+                <h2>影音精彩赏析</h2>
+                <p>精选片段与深度解读</p>
+            </div>
+            <div class="video-grid">
+                <div class="video-main">
+                    <div class="video-placeholder">
+                        <div class="big-play">▶</div>
+                        <p>点击播放 · 经典片段合集</p>
+                        <p style="font-size: 13px;">甄嬛传高光时刻混剪</p>
+                    </div>
+                    <div style="margin-top: 15px; font-size: 14px; color: #b6957a;">
+                        <p>本页面提供甄嬛传经典片段的影音赏析指引。推荐前往正版视频平台观看完整剧集，体验更佳的画质与音效。</p>
+                    </div>
+                </div>
+                <div class="video-list">
+                    <h3>人气影音片段</h3>
+                    <div class="video-list-item"><span class="num">01</span>甄嬛初遇皇上 · 杏花微雨</div>
+                    <div class="video-list-item"><span class="num">02</span>华妃"贱人就是矫情"名场面</div>
+                    <div class="video-list-item"><span class="num">03</span>滴血验亲大殿对峙</div>
+                    <div class="video-list-item"><span class="num">04</span>甄嬛封妃 · 凤冠霞帔</div>
+                    <div class="video-list-item"><span class="num">05</span>沈眉庄之死 · 催泪片段</div>
+                    <div class="video-list-item"><span class="num">06</span>大结局 · 甄嬛回首一生</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="music-section" id="music">
+        <div class="container">
+            <div class="section-title">
+                <h2>影视原声配乐</h2>
+                <p>那些一听就想起剧情的旋律</p>
+            </div>
+            <div class="music-grid">
+                <div class="music-card">
+                    <div class="music-icon">♪</div>
+                    <div class="music-info">
+                        <h3>《红颜劫》</h3>
+                        <p>片头曲 · 姚贝娜演唱，道尽深宫红颜的无奈与宿命。</p>
+                    </div>
+                </div>
+                <div class="music-card">
+                    <div class="music-icon">♪</div>
+                    <div class="music-info">
+                        <h3>《凤凰于飞》</h3>
+                        <p>片尾曲 · 刘欢创作，大气磅礴而意蕴悠长。</p>
+                    </div>
+                </div>
+                <div class="music-card">
+                    <div class="music-icon">♪</div>
+                    <div class="music-info">
+                        <h3>《菩萨蛮》</h3>
+                        <p>插曲 · 姚贝娜演唱，温婉细腻，常用于剧中抒情场景。</p>
+                    </div>
+                </div>
+                <div class="music-card">
+                    <div class="music-icon">♪</div>
+                    <div class="music-info">
+                        <h3>《惊鸿舞》</h3>
+                        <p>舞蹈配乐 · 古典韵味十足，配合剧中惊鸿舞场面令人难忘。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>观剧常见问题</h2>
+                <p>关于甄嬛传影音的一些解答</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>甄嬛传可以在哪里在线观看？</h3>
+                    <p>甄嬛传的完整剧集在优酷、腾讯视频、爱奇艺等主流视频平台均有正版授权，可以搜索"甄嬛传"直接观看。部分平台可能需要VIP会员，建议优先选择正版渠道。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>甄嬛传一共有多少集？每集多长？</h3>
+                    <p>甄嬛传电视播出版本为76集，每集时长约45分钟。部分平台可能会有不同的剪辑版本，但主流版本均为76集完整版。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>甄嬛传和原著小说有什么区别？</h3>
+                    <p>电视剧改编自流潋紫的同名小说。小说背景设定在架空的大周朝，电视剧则改为清朝雍正年间。整体剧情框架保持了一致，但在人物设定和部分情节上做了影视化调整。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>第一次看甄嬛传应该注意什么？</h3>
+                    <p>建议从第一集开始按顺序观看，注意人物关系和台词细节。剧中很多伏笔和铺垫需要细细品味，二刷时往往能发现更多隐藏信息。也可以配合弹幕或解说一起观看，能获得更多乐趣。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>甄嬛传为什么如此经典？</h3>
+                    <p>甄嬛传的成功在于严谨的剧本逻辑、演员精湛的表演、考究的服化道制作，以及对人性深刻的刻画。它不只是宫斗剧，更是一部关于权力与人性的话剧，每个角色都有血有肉，值得反复品味。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>重温经典，品味甄嬛传的魅力</h2>
+            <p>无论是第一次观看还是N刷重温，甄嬛传总有新的惊喜等待发现</p>
+            <a href="#episodes" class="cta-btn">开始探索经典剧情</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#intro">剧集简介</a>
+                <a href="#episodes">经典剧情</a>
+                <a href="#characters">人物群像</a>
+                <a href="#video">影音赏析</a>
+                <a href="#music">原声配乐</a>
+                <a href="#faq">观剧指南</a>
+            </div>
+            <p class="copyright">© 2024 甄嬛传影音专题站 · 本页面仅供影视爱好者交流赏析，请支持正版剧集 · 部分内容参考自公开资料</p>
+        </div>
+    </footer>
+</body>
+                  </html>
