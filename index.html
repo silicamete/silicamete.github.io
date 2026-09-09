@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秘密教学动漫-隐秘课程背后的故事与角色深度解析</title>
+    <meta name="description" content="探索秘密教学动漫的独特世界观与人物关系，解读剧情暗线、角色成长与作品主题，为动画爱好者提供全面的观看指南与内容剖析。">
+    <meta name="keywords" content="秘密教学动漫,秘密教学,动漫解析,隐秘课程,动画推荐,角色分析,剧情解读">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+            background: #f8f5f0;
+            color: #2c2c2c;
+            line-height: 1.7;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* 容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 顶部信息条 */
+        .topbar {
+            background: #1f1a17;
+            color: #e8dcc8;
+            padding: 8px 0;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+        .topbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .topbar span {
+            opacity: 0.85;
+        }
+        .topbar .social {
+            display: flex;
+            gap: 18px;
+        }
+
+        /* 主Header */
+        .main-header {
+            background: #ffffff;
+            border-bottom: 1px solid #e4ded5;
+            padding: 18px 0;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03);
+        }
+        .header-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #6b4f3c, #9b7b5e);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 26px;
+            font-weight: 700;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+        }
+        .logo-text {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #3a2e26;
+            letter-spacing: 1px;
+        }
+        .logo-text small {
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: #7d6a58;
+            display: block;
+            letter-spacing: 2px;
+        }
+        .header-nav {
+            display: flex;
+            gap: 28px;
+        }
+        .header-nav a {
+            font-weight: 500;
+            color: #3f3a36;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+            font-size: 16px;
+        }
+        .header-nav a:hover,
+        .header-nav a.active {
+            color: #9b6a45;
+            border-bottom-color: #9b6a45;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: #f3efe9;
+            border-radius: 40px;
+            padding: 5px 10px 5px 18px;
+            border: 1px solid #e3dbd0;
+        }
+        .search-box input {
+            border: none;
+            background: transparent;
+            outline: none;
+            font-size: 14px;
+            width: 160px;
+            color: #2c2c2c;
+        }
+        .search-box button {
+            background: #6f513c;
+            border: none;
+            color: white;
+            border-radius: 30px;
+            padding: 6px 14px;
+            font-size: 13px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        /* Hero 首屏 */
+        .hero {
+            background: linear-gradient(105deg, #1e1712 0%, #3a2b20 55%, #5a4230 100%);
+            color: #f2e7da;
+            padding: 50px 0 60px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            right: -80px;
+            bottom: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(190, 145, 100, 0.3), transparent 70%);
+            border-radius: 50%;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        .hero-copy h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            font-weight: 700;
+            margin-bottom: 14px;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+        .hero-copy h1 span {
+            color: #d9a86c;
+        }
+        .hero-copy p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 24px;
+            max-width: 520px;
+        }
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .btn {
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.2s;
+            display: inline-block;
+        }
+        .btn-primary {
+            background: #d9a86c;
+            color: #1f1a17;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .btn-primary:hover {
+            background: #c9945a;
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            border: 1.5px solid rgba(255, 255, 255, 0.6);
+            color: #fff;
+        }
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .hero-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(6px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .hero-card h3 {
+            color: #eccb9f;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .hero-card ul li {
+            padding: 8px 0;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+            display: flex;
+            gap: 8px;
+            font-size: 15px;
+        }
+        .hero-card ul li::before {
+            content: "▸";
+            color: #d9a86c;
+            font-weight: bold;
+        }
+
+        /* 内容区块通用 */
+        .section {
+            padding: 40px 0;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2e231a;
+            margin-bottom: 8px;
+            position: relative;
+            display: inline-block;
+        }
+        .section-sub {
+            color: #7a6a5b;
+            margin-bottom: 30px;
+            font-size: 15px;
+            border-left: 4px solid #c4a078;
+            padding-left: 14px;
+        }
+        .section-title-wrap {
+            margin-bottom: 28px;
+            border-bottom: 2px solid #e8dfd2;
+            padding-bottom: 10px;
+        }
+
+        /* 卡片网格 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 24px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #eee7dd;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+        .card-img {
+            height: 170px;
+            background: linear-gradient(135deg, #4f3e2e, #8b6c50);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 48px;
+            font-weight: 700;
+            position: relative;
+        }
+        .card-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 3px 12px;
+            border-radius: 30px;
+            font-size: 12px;
+            backdrop-filter: blur(4px);
+        }
+        .card-content {
+            padding: 18px 16px;
+        }
+        .card-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #2e2a26;
+        }
+        .card-content p {
+            color: #6f6a64;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+        .tag-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag {
+            background: #efe9e1;
+            padding: 3px 10px;
+            border-radius: 30px;
+            font-size: 12px;
+            color: #6b4f3c;
+        }
+
+        /* 特色区块 双列 */
+        .split-section {
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            gap: 30px;
+            align-items: start;
+        }
+        .info-panel {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+            border-left: 4px solid #9b7b5e;
+        }
+        .info-panel h3 {
+            font-size: 1.3rem;
+            margin-bottom: 14px;
+        }
+        .info-panel p {
+            margin-bottom: 12px;
+        }
+        .side-list {
+            background: #f0eae2;
+            border-radius: 16px;
+            padding: 20px;
+        }
+        .side-list h3 {
+            font-size: 1.1rem;
+            border-bottom: 1px dashed #baa996;
+            padding-bottom: 10px;
+            margin-bottom: 14px;
+        }
+        .side-list li {
+            padding: 8px 0;
+            font-size: 15px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        }
+        .side-list li:last-child {
+            border: none;
+        }
+
+        /* 角色表 */
+        .char-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .char-table th {
+            background: #534235;
+            color: #f0e3d2;
+            padding: 12px;
+            text-align: left;
+            font-weight: 500;
+        }
+        .char-table td {
+            padding: 12px;
+            border-bottom: 1px solid #eee3d5;
+            font-size: 15px;
+        }
+        .char-table tr:last-child td {
+            border: none;
+        }
+        .char-table td:first-child {
+            font-weight: 600;
+            color: #5a3f2b;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 800px;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 14px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+            border: 1px solid #eee4da;
+        }
+        .faq-item h4 {
+            font-size: 1.05rem;
+            color: #4a3524;
+            margin-bottom: 8px;
+        }
+        .faq-item p {
+            color: #5f5952;
+        }
+
+        /* 页脚 */
+        .main-footer {
+            background: #201a16;
+            color: #b7aa99;
+            padding: 40px 0 20px;
+            margin-top: 40px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-grid a {
+            color: #b7aa99;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .footer-grid a:hover {
+            color: #d9a86c;
+        }
+        .footer-bottom {
+            border-top: 1px solid #3a3129;
+            padding-top: 20px;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        /* 响应式 */
+        @media (max-width: 900px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-copy h1 {
+                font-size: 2.2rem;
+            }
+            .split-section {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .header-nav {
+                gap: 14px;
+                flex-wrap: wrap;
+                margin-top: 10px;
+            }
+            .header-wrap {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .search-box {
+                margin-top: 12px;
+                width: 100%;
+            }
+            .search-box input {
+                flex: 1;
+                width: auto;
+            }
+            .logo-text {
+                font-size: 1.3rem;
+            }
+        }
+        @media (max-width: 500px) {
+            .hero-copy h1 {
+                font-size: 1.8rem;
+            }
+            .btn {
+                padding: 10px 18px;
+                font-size: 14px;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+    <!-- 顶部条 -->
+    <div class="topbar">
+        <div class="container">
+            <span>✦ 秘密教学 · 深度动漫文化站</span>
+            <div class="social">
+                <span>动画 · 漫画 · 解析</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-wrap">
+            <div class="logo-area">
+                <div class="logo-icon">密</div>
+                <div class="logo-text">
+                    秘密教学
+                    <small>HIMITSU  ACADEMY</small>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <a href="#" class="active">首页</a>
+                <a href="#">剧情解析</a>
+                <a href="#">人物关系</a>
+                <a href="#">动画资源</a>
+                <a href="#">讨论区</a>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索角色/剧情">
+                <button>搜索</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero 首屏 -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <h1>潜入<span>秘密教学</span>的<br>真实世界</h1>
+                <p>这是一部包裹着校园外衣、却隐藏着权力博弈与身份谜团的作品。每个角色都带着不为人知的过去，每一句对白都可能暗藏玄机。</p>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary">开始探索剧情线</a>
+                    <a href="#" class="btn btn-outline">查看角色档案</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <h3>📖 本作核心看点</h3>
+                <ul>
+                    <li>以“特殊教师”为切入点的暗线叙事</li>
+                    <li>多重视角下的心理角力与反转</li>
+                    <li>校园等级制度背后的隐喻表达</li>
+                    <li>细腻的画面语言与符号化细节</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要介绍区 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title-wrap">
+                <h2 class="section-title">作品概览</h2>
+                <div class="section-sub">关于《秘密教学》你应当知道的背景与主题</div>
+            </div>
+            <div class="split-section">
+                <div class="info-panel">
+                    <h3>故事设定的独特性</h3>
+                    <p>《秘密教学》并非传统意义上的校园动画。它借用了学校这一封闭空间，将师生关系、同伴竞争、规则与越界等元素融合在一起，形成一种带有悬疑感的叙事节奏。故事中频繁出现的“秘密课程”实际指向权力结构的隐性传递，而主角们在其中的选择构成了主要戏剧冲突。</p>
+                    <p>作品在人物塑造上刻意打破了“善/恶”的二元框架。哪怕是看似边缘的角色，也拥有完整的行动逻辑与背景铺垫。这种写法提升了整个故事的真实感，也让观众在观看时不断重新审视自己的判断。</p>
+                    <p>从视觉风格来看，本作采用偏写实的厚涂风格，在关键情节中会突然切换为符号化的意象表达，形成强烈的心理冲击。这种美术上的反差，也是作品辨识度的重要来源之一。</p>
+                </div>
+                <aside class="side-list">
+                    <h3>你可能想了解</h3>
+                    <ul>
+                        <li><a href="#">▸ 秘密教学的主要剧情分集梳理</a></li>
+                        <li><a href="#">▸ 主角与“神秘教师”的真实关系</a></li>
+                        <li><a href="#">▸ 动画与漫画原作的差异对比</a></li>
+                        <li><a href="#">▸ 隐藏在每个章节标题里的伏笔</a></li>
+                        <li><a href="#">▸ 官方衍生内容与设定集说明</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- 角色介绍卡片 -->
+    <section class="section" style="background: #f1ece5; padding-top: 40px;">
+        <div class="container">
+            <div class="section-title-wrap">
+                <h2 class="section-title">核心角色档案</h2>
+                <div class="section-sub">了解这些角色，才能看懂隐藏的剧情脉络</div>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(135deg, #3d2f23, #6e563d);">早</div>
+                    <div class="card-content">
+                        <h3>早乙女 刹那</h3>
+                        <p>表面温和的学生会成员，实际掌握着大量校园秘密。他的行动往往出人意料，看似温和实则极具掌控力。</p>
+                        <div class="tag-row"><span class="tag">关键人物</span><span class="tag">双重身份</span></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(135deg, #51422e, #8a6a4a);">凪</div>
+                    <div class="card-content">
+                        <h3>凪 千寻</h3>
+                        <p>新转来的学生，无意中卷入了一场围绕“特殊课堂”的争夺。他的视角是观众探索秘密的窗口。</p>
+                        <div class="tag-row"><span class="tag">主角</span><span class="tag">成长型</span></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(135deg, #2b3a3a, #4f6d6d);">夜</div>
+                    <div class="card-content">
+                        <h3>夜见 绫</h3>
+                        <p>神秘的美术教师，总在放学后留下特定的学生。她的课程内容从未公开，却是整个故事的核心谜团。</p>
+                        <div class="tag-row"><span class="tag">教师</span><span class="tag">谜之存在</span></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background: linear-gradient(135deg, #3a2b3f, #6d4f77);">御</div>
+                    <div class="card-content">
+                        <h3>御门 院</h3>
+                        <p>学生会会长，拥有极高的声望。但他似乎一直在掩盖着什么，与校外势力也有某种关联。</p>
+                        <div class="tag-row"><span class="tag">复杂</span><span class="tag">权力</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 剧情 / 主题分析 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title-wrap">
+                <h2 class="section-title">剧情与主题深度剖析</h2>
+                <div class="section-sub">不止是动画，更是对规则与自由的探讨</div>
+            </div>
+            <div class="split-section">
+                <div class="info-panel">
+                    <h3>“秘密课程”到底在教什么？</h3>
+                    <p>从已公开的剧情线索来看，“秘密教学”表面上是一系列不对外公布的辅导课，但内容并不局限于学科知识。它更像是一种筛选机制——通过特定的考核方式，发掘并培养具有某种特质的学生。这种设定影射了现实中的精英教育模式，也引发了观众对于“谁来决定一个人价值”的思考。</p>
+                    <p>动画中多次出现“钥匙”“门”等意象，象征着进入某个阶层或获得某种真相的资格。主角每一次接近秘密的核心，都要付出相应的代价，这使得剧情始终保持张力。</p>
+                    <p>值得注意的是，作品中没有任何角色是全知全能的。所有人都在信息不对等的情况下做出选择，这也是为什么许多观众愿意反复回看，寻找之前忽略的细节。</p>
+                </div>
+                <div class="info-panel" style="border-left-color: #6b4f3c;">
+                    <h3>动画表现手法的亮点</h3>
+                    <p>导演在关键场景中使用了大量“留白”与“静默”处理，让观众自行填补角色内心的情绪。配乐方面则采用低音提琴与钢琴的极简组合，营造出一种克制的紧张感。</p>
+                    <p>另外，背景中频繁出现的时钟、旧照片、空教室等元素，并非单纯装饰，而是与人物心理状态形成呼应。这种细节控的风格让作品具备了超越一般校园题材的深度。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 角色关系表 -->
+    <section class="section" style="background: #efe8df;">
+        <div class="container">
+            <div class="section-title-wrap">
+                <h2 class="section-title">主要关系脉络</h2>
+                <div class="section-sub">理清这些联系，才能看懂剧情转折背后的动机</div>
+            </div>
+            <table class="char-table">
+                <thead>
+                    <tr>
+                        <th>角色</th>
+                        <th>与主角关系</th>
+                        <th>隐藏身份/动机</th>
+                        <th>关键线索</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>早乙女 刹那</td>
+                        <td>学长 / 引导者</td>
+                        <td>曾参与过早期的“秘密课程”</td>
+                        <td>总是出现在主角最迷茫的时刻</td>
+                    </tr>
+                    <tr>
+                        <td>夜见 绫</td>
+                        <td>美术教师</td>
+                        <td>可能是课程的创建者之一</td>
+                        <td>画室中挂着一幅未完成的旧画</td>
+                    </tr>
+                    <tr>
+                        <td>御门 院</td>
+                        <td>学生会会长</td>
+                        <td>试图控制“秘密课程”的走向</td>
+                        <td>与校外赞助商有秘密联络</td>
+                    </tr>
+                    <tr>
+                        <td>凪 千寻</td>
+                        <td>主角自己</td>
+                        <td>拥有某种未知的“资质”</td>
+                        <td>小时候曾丢失过一段记忆</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title-wrap">
+                <h2 class="section-title">常见疑问解答</h2>
+                <div class="section-sub">关于秘密教学动漫，观众最关心的问题</div>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h4>Q1：《秘密教学》是否有第二季计划？</h4>
+                    <p>截至当前公开信息，制作方并未发布官方续订公告。不过原作漫画仍在连载，动画第一季结尾留下了明显伏笔。建议关注作品官方网站或社交媒体账号获取后续消息。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q2：动画和漫画的剧情差异大吗？</h4>
+                    <p>动画版在主要事件框架上忠实于原作，但删减了部分支线角色的心理描写，同时增加了原创的“雨中对话”场景。如果你希望更深入理解角色动机，阅读原作漫画会是不错的补充。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q3：这部作品适合什么年龄段的观众？</h4>
+                    <p>由于涉及权力、谎言和心理博弈等主题，且部分场景具有压迫感，建议16岁及以上观众观看。它并不是一部轻松向的治愈动画，而是一部需要思考的群像剧。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q4：在哪里可以观看正版动画？</h4>
+                    <p>国内观众可以关注Bilibili等主流正版平台是否有引进。在未确认引进前，支持正版漫画是最稳妥的方式。请勿轻信非官方观影链接，以免造成财产损失。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 style="color: #d9a86c; margin-bottom: 12px;">秘密教学动漫站</h3>
+                    <p style="font-size: 14px;">专注于秘密教学动漫的深度解析与情报收集。我们坚持原创分析，不搬运不造谣，做有温度的动漫文化社区。</p>
+                </div>
+                <div>
+                    <h4 style="color: #d9a86c; margin-bottom: 10px;">快速导航</h4>
+                    <a href="#">剧情解析</a>
+                    <a href="#">角色大全</a>
+                    <a href="#">漫画连载</a>
+                    <a href="#">壁纸图库</a>
+                </div>
+                <div>
+                    <h4 style="color: #d9a86c; margin-bottom: 10px;">免责声明</h4>
+                    <p style="font-size: 13px;">本站不提供任何盗版资源，仅作讨论与评论。所有版权归原制作方所有。如涉及侵权，请联系我们处理。</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2025 秘密教学动漫粉丝交流站 · 本页面仅供学习与交流使用
+            </div>
+        </div>
+    </footer>
+</body>
+      </html>
