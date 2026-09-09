@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跑酷游戏-热门跑酷手游推荐与玩法技巧全攻略</title>
+    <meta name="description" content="探索最新最热门的跑酷游戏大全，涵盖地铁跑酷、神庙逃亡等经典作品与热门新作，提供游戏下载指南、玩法技巧、角色对比与常见问题解答，助你轻松成为跑酷大师。">
+    <meta name="keywords" content="跑酷游戏,跑酷手游,地铁跑酷,神庙逃亡,跑酷游戏推荐,跑酷游戏下载,跑酷技巧">
+    <link rel="stylesheet" href="data:text/css,">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: #f5f7fa;
+            color: #1a1a2e;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .site-header {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .logo-icon {
+            font-size: 2rem;
+        }
+        .logo span {
+            background: linear-gradient(90deg, #f7971e, #ffd200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .main-nav ul {
+            display: flex;
+            gap: 30px;
+        }
+        .main-nav a {
+            color: rgba(255,255,255,0.85);
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 6px 4px;
+            border-bottom: 2px solid transparent;
+        }
+        .main-nav a:hover {
+            color: #ffd200;
+            border-bottom-color: #ffd200;
+        }
+        .header-search {
+            display: flex;
+            align-items: center;
+            background: rgba(255,255,255,0.15);
+            border-radius: 30px;
+            padding: 6px 16px;
+        }
+        .header-search input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 0.9rem;
+            padding: 4px 0;
+            width: 150px;
+        }
+        .header-search input::placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+        .header-search button {
+            background: transparent;
+            border: none;
+            color: #ffd200;
+            cursor: pointer;
+            font-size: 1.1rem;
+            margin-left: 6px;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(140deg, #1a1a40 0%, #2b1b4d 50%, #3a1c5c 100%);
+            color: #fff;
+            padding: 70px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255,210,0,0.2) 0%, transparent 70%);
+            top: -100px;
+            right: -100px;
+            border-radius: 50%;
+        }
+        .hero .container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        .hero-content {
+            flex: 1;
+        }
+        .hero-content h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+        .hero-content h1 .highlight {
+            color: #ffd200;
+            position: relative;
+        }
+        .hero-content p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 28px;
+            max-width: 540px;
+        }
+        .hero-btns {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #f7971e, #ffd200);
+            color: #1a1a2e;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            box-shadow: 0 8px 25px rgba(255,210,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(255,210,0,0.4);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid rgba(255,255,255,0.5);
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        .btn-outline:hover {
+            border-color: #ffd200;
+            color: #ffd200;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 35px;
+            margin-top: 35px;
+        }
+        .hero-stat {
+            text-align: center;
+        }
+        .hero-stat .num {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #ffd200;
+        }
+        .hero-stat .label {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.6);
+        }
+        .hero-graphic {
+            flex: 0 0 380px;
+            position: relative;
+            z-index: 2;
+        }
+        .hero-graphic .runner {
+            font-size: 6rem;
+            text-align: center;
+            animation: bounce 2s infinite;
+            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .floating-cards {
+            position: absolute;
+            font-size: 1.8rem;
+            opacity: 0.7;
+        }
+        .card1 { top: -20px; left: 20px; animation: float 3s infinite; }
+        .card2 { bottom: -10px; right: 30px; animation: float 4s infinite 0.5s; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(5deg); }
+        }
+
+        /* Section Common */
+        .section {
+            padding: 70px 0;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        .section-tag {
+            display: inline-block;
+            background: rgba(247, 151, 30, 0.1);
+            color: #f7971e;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+        .section-header h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+        .section-header p {
+            color: #6c6c8a;
+            font-size: 1rem;
+        }
+
+        /* Game Cards */
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+        .game-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+        .game-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .game-thumb {
+            height: 160px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            color: rgba(255,255,255,0.9);
+            position: relative;
+        }
+        .game-thumb.th2 { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .game-thumb.th3 { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .game-thumb.th4 { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        .game-thumb.th5 { background: linear-gradient(135deg, #fa709a, #fee140); }
+        .game-thumb.th6 { background: linear-gradient(135deg, #30cfd0, #330867); }
+        .game-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: rgba(255,255,255,0.9);
+            color: #1a1a2e;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+        }
+        .game-info {
+            padding: 18px;
+        }
+        .game-info h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .game-info p {
+            font-size: 0.9rem;
+            color: #6c6c8a;
+            margin-bottom: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .game-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #8a8aa3;
+            border-top: 1px solid #f0f0f5;
+            padding-top: 12px;
+        }
+        .game-rating {
+            color: #f7971e;
+            font-weight: 700;
+        }
+        .game-download {
+            background: #f0f0f5;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #4a4a6a;
+            transition: background 0.3s;
+        }
+        .game-download:hover {
+            background: #ffd200;
+            color: #1a1a2e;
+        }
+
+        /* Category Pills */
+        .category-pills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .pill {
+            background: #fff;
+            border: 2px solid #e8e8f0;
+            padding: 8px 22px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #4a4a6a;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .pill:hover, .pill.active {
+            background: #1a1a2e;
+            color: #fff;
+            border-color: #1a1a2e;
+        }
+
+        /* Tips Section */
+        .tips-section {
+            background: #fff;
+        }
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .tip-card {
+            padding: 30px;
+            border-radius: 16px;
+            background: #f8f9ff;
+            border-left: 4px solid #f7971e;
+            transition: transform 0.3s;
+        }
+        .tip-card:hover {
+            transform: translateX(8px);
+        }
+        .tip-icon {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+        .tip-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .tip-card p {
+            color: #4a4a6a;
+            font-size: 0.95rem;
+        }
+
+        /* Ranking */
+        .ranking-list {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            padding: 30px;
+        }
+        .rank-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 16px 10px;
+            border-bottom: 1px solid #f0f0f5;
+        }
+        .rank-item:last-child {
+            border-bottom: none;
+        }
+        .rank-num {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #c8c8dd;
+            width: 50px;
+            text-align: center;
+        }
+        .rank-item:nth-child(1) .rank-num {
+            color: #f7971e;
+        }
+        .rank-item:nth-child(2) .rank-num {
+            color: #aaa;
+        }
+        .rank-item:nth-child(3) .rank-num {
+            color: #cd7f32;
+        }
+        .rank-info {
+            flex: 1;
+        }
+        .rank-info h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        .rank-info span {
+            font-size: 0.85rem;
+            color: #8a8aa3;
+        }
+        .rank-tags {
+            display: flex;
+            gap: 8px;
+        }
+        .rank-tags span {
+            background: #f0f0f5;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        /* FAQ */
+        .faq-section {
+            background: #1a1a2e;
+            color: #fff;
+        }
+        .faq-section .section-header h2 {
+            color: #fff;
+        }
+        .faq-section .section-header p {
+            color: rgba(255,255,255,0.6);
+        }
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .faq-question {
+            padding: 18px 24px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+        .faq-question:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        .faq-question .icon {
+            font-size: 1.3rem;
+            color: #ffd200;
+            transition: transform 0.3s;
+        }
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .faq-item.open .faq-answer {
+            max-height: 300px;
+            padding: 0 24px 20px;
+        }
+        .faq-item.open .icon {
+            transform: rotate(45deg);
+        }
+
+        /* CTA */
+        .cta-section {
+            background: linear-gradient(135deg, #f7971e, #ffd200);
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .cta-section h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+        }
+        .cta-section p {
+            color: rgba(26,26,46,0.8);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-btn {
+            background: #1a1a2e;
+            color: #ffd200;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: inline-block;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        .cta-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #0f0c29;
+            color: rgba(255,255,255,0.6);
+            padding: 50px 0 20px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-col h4 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 18px;
+        }
+        .footer-col ul li {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        .footer-col ul li a:hover {
+            color: #ffd200;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-graphic {
+                flex: 0 0 auto;
+                margin-top: 30px;
+            }
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-stats {
+                justify-content: center;
+            }
+            .main-nav {
+                display: none;
+            }
+        }
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+            .header-search {
+                display: none;
+            }
+            .game-grid {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            }
+            .rank-item {
+                flex-wrap: wrap;
+            }
+            .rank-tags {
+                margin-top: 6px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero {
+                padding: 50px 0;
+            }
+            .hero-content h1 {
+                font-size: 1.7rem;
+            }
+            .hero-stats {
+                gap: 20px;
+            }
+            .hero-stat .num {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <span class="logo-icon">🏃</span>
+                <span>跑酷游戏</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">游戏库</a></li>
+                    <li><a href="#">排行榜</a></li>
+                    <li><a href="#">技巧攻略</a></li>
+                    <li><a href="#">资讯</a></li>
+                </ul>
+            </nav>
+            <div class="header-search">
+                <input type="text" placeholder="搜索游戏...">
+                <button>🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>发现最热门的<span class="highlight">跑酷游戏</span><br>开启你的极速之旅</h1>
+                <p>从经典的地铁跑酷到创新的3D跑酷玩法，我们为你精选了当下最值得尝试的跑酷游戏作品。无论是追求高分挑战还是休闲放松，总有一款适合你。</p>
+                <div class="hero-btns">
+                    <a href="#games" class="btn-primary">浏览游戏库</a>
+                    <a href="#tips" class="btn-outline">查看玩法技巧</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="num">5000+</div>
+                        <div class="label">跑酷爱好者</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="num">50+</div>
+                        <div class="label">精选游戏</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="num">4.8</div>
+                        <div class="label">平均评分</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <div class="runner">🏃‍♂️</div>
+                <div class="floating-cards card1">🪙</div>
+                <div class="floating-cards card2">⚡</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">游戏分类</span>
+                <h2>按喜好挑选你的跑酷游戏</h2>
+                <p>不同风格，不同体验，总有一款让你上瘾</p>
+            </div>
+            <div class="category-pills">
+                <span class="pill active">全部</span>
+                <span class="pill">3D跑酷</span>
+                <span class="pill">横版跑酷</span>
+                <span class="pill">像素风格</span>
+                <span class="pill">无尽模式</span>
+                <span class="pill">剧情跑酷</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section class="section" id="games" style="padding-top: 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">热门推荐</span>
+                <h2>玩家最爱的跑酷游戏</h2>
+                <p>根据玩家评分与下载量精选的优质作品</p>
+            </div>
+            <div class="game-grid">
+                <!-- Game 1 -->
+                <div class="game-card">
+                    <div class="game-thumb">
+                        🚇
+                        <span class="game-badge">🔥 热门</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>地铁跑酷</h3>
+                        <p>经典的3D无尽跑酷，躲避列车与障碍，收集金币，与好友比拼分数。</p>
+                        <div class="game-meta">
+                            <span class="game-rating">★ 4.8</span>
+                            <span class="game-download">获取游戏</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game 2 -->
+                <div class="game-card">
+                    <div class="game-thumb th2">
+                        🏛️
+                        <span class="game-badge">经典</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>神庙逃亡</h3>
+                        <p>在神秘丛林中奔跑逃亡，转弯跳跃滑铲，体验紧张刺激的探险之旅。</p>
+                        <div class="game-meta">
+                            <span class="game-rating">★ 4.6</span>
+                            <span class="game-download">获取游戏</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game 3 -->
+                <div class="game-card">
+                    <div class="game-thumb th3">
+                        🦘
+                        <span class="game-badge">新作</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>城市跑酷大冒险</h3>
+                        <p>穿梭于高楼大厦之间，利用滑索、蹦床等道具，完成各种特技动作。</p>
+                        <div class="game-meta">
+                            <span class="game-rating">★ 4.5</span>
+                            <span class="game-download">获取游戏</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game 4 -->
+                <div class="game-card">
+                    <div class="game-thumb th4">
+                        🍃
+                        <span class="game-badge">休闲</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>忍者必须死3</h3>
+                        <p>水墨画风格的跑酷战斗，忍术与跑酷结合，挑战强大的BOSS。</p>
+                        <div class="game-meta">
+                            <span class="game-rating">★ 4.7</span>
+                            <span class="game-download">获取游戏</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game 5 -->
+                <div class="game-card">
+                    <div class="game-thumb th5">
+                        🎮
+                        <span class="game-badge">像素</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>几何跑酷</h3>
+                        <p>极简像素风格，考验你的反应速度与节奏感，适合碎片时间挑战。</p>
+                        <div class="game-meta">
+                            <span class="game-rating">★ 4.4</span>
+                            <span class="game-download">获取游戏</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game 6 -->
+                <div class="game-card">
+                    <div class="game-thumb th6">
+                        🚀
+                        <span class="game-badge">科幻</span>
+                    </div>
+                    <div class="game-info">
+                        <h3>赛博跑酷</h3>
+                        <p>未来都市背景，霓虹灯光下的极限跑酷，结合科技与速度的盛宴。</p>
+                        <div class="game-meta">
+                            <span class="game-rating">★ 4.3</span>
+                            <span class="game-download">获取游戏</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="section tips-section" id="tips">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">新手必看</span>
+                <h2>跑酷游戏核心玩法技巧</h2>
+                <p>掌握这些技巧，让你的分数突飞猛进</p>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">🎯</div>
+                    <h3>掌握节奏感</h3>
+                    <p>跑酷游戏的核心在于节奏。注意观察障碍物的出现规律，配合音乐的节拍进行跳跃和滑铲，能显著提高你的反应效率。</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🪙</div>
+                    <h3>合理规划路线</h3>
+                    <p>不要盲目追求金币。优先保证生存，在熟悉地图后，再规划一条金币密集且安全的路线，才能获得更高分数。</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">⚡</div>
+                    <h3>善用道具</h3>
+                    <p>磁铁、喷气背包、双倍分数等道具的使用时机很重要。在金币密集区使用磁铁，在长直道使用喷气背包，效果最佳。</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🔄</div>
+                    <h3>勤加练习</h3>
+                    <p>跑酷游戏的上手门槛不高，但精通需要大量练习。每天花15-30分钟熟悉新地图，你的肌肉记忆会逐渐形成。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ranking -->
+    <section class="section" id="ranking">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">人气榜单</span>
+                <h2>本周跑酷游戏热度榜</h2>
+                <p>基于玩家活跃度与社区讨论热度综合排序</p>
+            </div>
+            <div class="ranking-list">
+                <div class="rank-item">
+                    <div class="rank-num">1</div>
+                    <div class="rank-info">
+                        <h3>地铁跑酷</h3>
+                        <span>全球下载量超10亿的常青树</span>
+                    </div>
+                    <div class="rank-tags">
+                        <span>3D</span>
+                        <span>无尽</span>
+                        <span>多人</span>
+                    </div>
+                </div>
+                <div class="rank-item">
+                    <div class="rank-num">2</div>
+                    <div class="rank-info">
+                        <h3>神庙逃亡2</h3>
+                        <span>经典续作，画面全面升级</span>
+                    </div>
+                    <div class="rank-tags">
+                        <span>冒险</span>
+                        <span>3D</span>
+                    </div>
+                </div>
+                <div class="rank-item">
+                    <div class="rank-num">3</div>
+                    <div class="rank-info">
+                        <h3>忍者必须死3</h3>
+                        <span>国风跑酷战斗的标杆之作</span>
+                    </div>
+                    <div class="rank-tags">
+                        <span>国风</span>
+                        <span>战斗</span>
+                    </div>
+                </div>
+                <div class="rank-item">
+                    <div class="rank-num">4</div>
+                    <div class="rank-info">
+                        <h3>滑雪大冒险</h3>
+                        <span>雪地场景的另类跑酷体验</span>
+                    </div>
+                    <div class="rank-tags">
+                        <span>雪地</span>
+                        <span>休闲</span>
+                    </div>
+                </div>
+                <div class="rank-item">
+                    <div class="rank-num">5</div>
+                    <div class="rank-info">
+                        <h3>跑跑卡丁车官方竞速版</h3>
+                        <span>竞速与跑酷的完美结合</span>
+                    </div>
+                    <div class="rank-tags">
+                        <span>竞速</span>
+                        <span>多人</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" style="background: rgba(255,210,0,0.15); color: #ffd200;">常见问题</span>
+                <h2>跑酷游戏常见疑问解答</h2>
+                <p>关于跑酷游戏，你可能想了解这些</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item open">
+                    <div class="faq-question">
+                        跑酷游戏需要网络才能玩吗？
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        大部分跑酷游戏都支持离线单机模式，你可以在没有网络的情况下进行游戏。但如果想参与排行榜、好友对战或购买道具，则需要连接网络。建议在首次进入游戏时查看游戏说明，了解具体功能对网络的要求。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        跑酷游戏的存档如何备份？
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        多数跑酷游戏都支持绑定账号（如手机号、邮箱或第三方账号）来同步游戏进度。建议在更换设备前，先确认游戏进度已经通过账号系统同步到云端，避免数据丢失。部分游戏也支持本地备份，但不如云端同步方便可靠。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        哪些跑酷游戏适合儿童玩？
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        对于儿童玩家，推荐选择画风可爱、操作简单且没有暴力元素的跑酷游戏，例如《地铁跑酷》《滑雪大冒险》等。这些游戏操作直观，场景明亮，适合低龄玩家。建议家长开启游戏内的青少年模式或设置防沉迷限制，并引导孩子合理安排游戏时间。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        跑酷游戏有PC版本吗？
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        是的，部分热门跑酷游戏除了手机版本外，也推出了PC版本，或者可以通过安卓模拟器在电脑上运行。PC端通常拥有更大的屏幕和更精确的操作（键盘/手柄），体验有所不同。你可以前往游戏官方网站或主流游戏平台查看是否有PC版本可供下载。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>准备好了吗？开始你的跑酷之旅！</h2>
+            <p>加入数百万跑酷爱好者的行列，挑战自己的极限速度，享受奔跑的乐趣。</p>
+            <a href="#games" class="cta-btn">立即开始游戏 🚀</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>🏃 跑酷游戏</h4>
+                    <ul>
+                        <li>关于我们</li>
+                        <li>联系我们</li>
+                        <li>加入我们</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>游戏分类</h4>
+                    <ul>
+                        <li>3D跑酷</li>
+                        <li>横版跑酷</li>
+                        <li>像素跑酷</li>
+                        <li>无尽模式</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>支持</h4>
+                    <ul>
+                        <li>帮助中心</li>
+                        <li>游戏反馈</li>
+                        <li>开发者合作</li>
+                        <li>家长指南</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <ul>
+                        <li>官方微博</li>
+                        <li>微信公众号</li>
+                        <li>抖音账号</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 跑酷游戏大全 - 本站内容仅供学习交流，游戏版权归原作者所有。请支持正版游戏。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ交互
+        document.querySelectorAll('.faq-question').forEach(function(question) {
+            question.addEventListener('click', function() {
+                var item = this.parentElement;
+                var isOpen = item.classList.contains('open');
+                // 关闭所有
+                document.querySelectorAll('.faq-item').forEach(function(el) {
+                    el.classList.remove('open');
+                });
+                // 如果之前没打开，则打开当前
+                if (!isOpen) {
+                    item.classList.add('open');
+                }
+            });
+        });
+
+        // Pill交互
+        document.querySelectorAll('.pill').forEach(function(pill) {
+            pill.addEventListener('click', function() {
+                document.querySelectorAll('.pill').forEach(function(p) {
+                    p.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+  </html>
